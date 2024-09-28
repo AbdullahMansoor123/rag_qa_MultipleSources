@@ -6,7 +6,7 @@ langchainhub
 langchain-openai
 langchain_core
 langsmith
-
+langchain
 
 faiss-cpu
 wikipedia
