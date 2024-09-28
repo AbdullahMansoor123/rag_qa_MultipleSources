@@ -1,0 +1,16 @@
+python-dotenv
+
+PyPDF2
+
+langchainhub
+langchain-openai
+langchain_core
+langsmith
+
+
+faiss-cpu
+wikipedia
+
+streamlit
+
+huggingface_hub

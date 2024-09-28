@@ -1,0 +1,7 @@
+.venv/*
+.env
+test_app.py
+sample_app.py
+testbed.ipynb
+sample.md
+imgs/*
