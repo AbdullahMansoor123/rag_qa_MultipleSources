@@ -7,6 +7,8 @@ langchain-openai
 langchain_core
 langsmith
 langchain
+langchain_community
+
 
 faiss-cpu
 wikipedia
