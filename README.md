@@ -1,3 +1,14 @@
+---
+title: Q/A Rag System
+emoji: 🏆
+colorFrom: gray
+colorTo: green
+sdk: streamlit
+sdk_version: 1.38.0
+app_file: app.py
+short_description: RAG Project for Customized Question-Answering System
+---
+
 # RAG Project for Customized Question-Answering System
 
 This project implements a **Retrieval-Augmented Generation (RAG) System** for a customized question-answering platform. Users can ask questions, and the system retrieves relevant information from multiple sources (Wikipedia, PDFs, and websites), using GPT-3.5-turbo to generate precise and contextual answers.
