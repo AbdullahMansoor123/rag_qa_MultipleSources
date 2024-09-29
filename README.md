@@ -1,3 +1,6 @@
+Here's the updated README with the Hugging Face app link included:
+
+```markdown
 ---
 title: Q/A Rag System
 emoji: 🏆
@@ -12,6 +15,8 @@ short_description: RAG Project for Customized Question-Answering System
 # RAG Project for Customized Question-Answering System
 
 This project implements a **Retrieval-Augmented Generation (RAG) System** for a customized question-answering platform. Users can ask questions, and the system retrieves relevant information from multiple sources (Wikipedia, PDFs, and websites), using GPT-3.5-turbo to generate precise and contextual answers.
+
+You can try the live version of this app on Hugging Face here: [QA RAG System on Hugging Face](https://huggingface.co/spaces/Spaceman-123/qa_rag_system)
 
 ## Table of Contents
 - [RAG Project for Customized Question-Answering System](#rag-project-for-customized-question-answering-system)
@@ -66,6 +71,7 @@ Before running the project, ensure you have the following:
 - **Python 3.10+**: Make sure Python is installed on your machine.
 - **OpenAI API Key**: Sign up for an OpenAI account and get your API key [here](https://platform.openai.com/signup).
 - **LangSmith API Key**: To track each LLM response with Langchain [here](https://smith.langchain.com).
+
 ---
 
 ## How to Run Locally
@@ -106,6 +112,7 @@ Before running the project, ensure you have the following:
     Once the app is running, you can view the logs of every interaction and response on the LangSmith dashboard under your project. This helps you track model behavior and optimize performance.
 
     Note: For now you can only use this feature when running streamlit locally
+
 ---
 
 1. **Run the Streamlit App**:
@@ -165,4 +172,5 @@ Potential improvements to the system include:
 2. **Advanced Caching**: Implement caching mechanisms to speed up repeated queries and avoid redundant data processing.
 3. **Fine-tune the Model**: Adapt the generative model with specific domain knowledge for improved accuracy.
 4. **UI Improvements**: Add better visualization for source selection and document preview before querying.
-
+```
+https://huggingface.co/spaces/Spaceman-123/qa_rag_system
