@@ -1,7 +1,7 @@
-import streamlit as st
-import json
-import requests
+import os
+import re
 from dotenv import load_dotenv
+
 from langchain import hub
 from PyPDF2 import PdfReader
 from langchain_community.tools import WikipediaQueryRun
@@ -14,7 +14,9 @@ from langchain_openai import ChatOpenAI
 from langchain.tools.retriever import create_retriever_tool
 from langchain.agents import create_openai_tools_agent
 from langchain.agents import AgentExecutor
-import re
+
+import streamlit as st
+
 
 # Function to validate a URL using regex
 def is_valid_url(url: str) -> bool:
@@ -105,14 +107,14 @@ def main():
     # Sidebar options for selecting data sources and inputting the OpenAI API key
     with st.sidebar:
         # Input for OpenAI API key
-        openai_api_key = st.text_input("Enter your OpenAI API Key:", type="password")
+        api_key_from_env = os.getenv('OPENAI_API_KEY')
+        openai_api_key = api_key_from_env if api_key_from_env else st.text_input("Enter your OpenAI API Key:", type="password")
+
 
         st.subheader("More Options")
         sources = ["Wikipedia", "PDF", "Website"]
         selected_sources = st.multiselect("Select data sources:", options=sources, default="Wikipedia")
         
-        
-
     # Process the question and display the response
     if user_question and selected_sources and openai_api_key:
         answer = llm_response(user_question, selected_sources, openai_api_key)
